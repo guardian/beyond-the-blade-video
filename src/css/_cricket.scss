@@ -119,3 +119,16 @@
     }
 }
 
+
+body[data-this-film='north'] [data-this-card='north'] {
+    display: none !important;
+}
+body[data-this-film='south'] [data-this-card='south'] {
+    display: none !important;
+}
+body[data-this-film='west'] [data-this-card='west'] {
+    display: none !important;
+}
+body[data-this-film='midlands'] [data-this-card='midlands'] {
+    display: none !important;
+}
