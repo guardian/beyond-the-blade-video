@@ -131,12 +131,12 @@ class DocumentaryMetadata {
         return this.comingSoon[0];
     }
 
-    get onwardJourneyLinks () {
-        return ['One', 'Two', 'Three', 'Four'].reduce((links, i) => {
-            links.push({position: i, jsonUrl: this.getField(`jsonSnap${i}`)});
-            return links;
-        }, []);
-    }
+    // get onwardJourneyLinks () {
+    //     return ['One', 'Two', 'Three', 'Four'].reduce((links, i) => {
+    //         links.push({position: i, jsonUrl: this.getField(`jsonSnap${i}`)});
+    //         return links;
+    //     }, []);
+    // }
 }
 
 export default DocumentaryMetadata;

@@ -132,3 +132,43 @@ body[data-this-film='west'] [data-this-card='west'] {
 body[data-this-film='midlands'] [data-this-card='midlands'] {
     display: none !important;
 }
+
+
+.doc-card {
+  position: relative;
+  background-color: #161616;
+  color: #F6F6F6;
+  font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px; }
+  @media (min-width: 30em) {
+    .doc-card {
+      font-size: 18px;
+      line-height: 20px; } }
+  @media (min-width: 41.25em) {
+    .doc-card {
+      font-size: 16px;
+      line-height: 18px; } }
+  @media (min-width: 46.25em) {
+    .doc-card {
+      font-size: 18px;
+      line-height: 20px; } }
+  .doc-card__poster {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 6px; }
+  .doc-card__description {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 500;
+    padding-bottom: 6px;
+    margin: 0; }
+  .doc-card .doc-card__link {
+    text-indent: -9em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
