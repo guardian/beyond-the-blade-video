@@ -54,6 +54,8 @@ class DocumentaryMetadata {
                         {chapters: chapters, comingSoon: comingSoon}
                     );
 
+                    document.body.dataset.thisFilm = this._docName;
+
                     resolve(this);
                 },
                 error: err => reject(err)
