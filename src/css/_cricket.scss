@@ -41,6 +41,20 @@
                 margin-bottom: -9px;
             }
         }
+        &:after {
+            body[data-this-film='north'] & {
+                content: ': The North';
+            }
+            body[data-this-film='south'] & {
+                content: ': The South';
+            }
+            body[data-this-film='west'] & {
+                content: ': The West';
+            }
+            body[data-this-film='midlands'] & {
+                content: ': The Midlands';
+            }
+        }
     }
     @include mq(desktop) {
         &--autoplay-stop-button {
