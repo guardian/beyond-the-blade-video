@@ -93,3 +93,29 @@
 .docs__poster--wrapper--playing + .docs--chapters-wrapper {
     display: none;
 }
+
+#inner-city-cricket {
+    margin-top: 18px;
+    .fc-container__header__title,
+    .doc-card__description {
+        color: #dcdcdc;
+    }
+    .doc-card__description {
+        font-weight: 400;
+        em {
+            font-style: normal;
+            font-weight: 700;
+            color: #dcdcdc;
+        }
+    }
+    .fc-slice__item+.fc-slice__item:before {
+        border-left: 0.0625rem solid transparent;
+    }
+    .spacer {
+        visibility: hidden;
+    }
+    .fc-slice__item:hover img {
+        opacity: 0.8;
+    }
+}
+
