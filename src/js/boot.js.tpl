@@ -21,7 +21,7 @@ define([], function() {
                 'sheetId': '1u5SVvMDpouEbMDhIbwFrxEbEtoBCd16yCbklWQANCbQ',
                 'docsArray':
                 [
-                  ["sport/ng-interactive/2018/jul/23/inner-city-cricket-fighting-for-new-blood", "west"],
+                  ["sport/ng-interactive/2018/jul/23/inner-city-cricket-fighting-for-new-blood", "father"],
                   ["sport/ng-interactive/2018/jul/23/inner-city-cricket-what-happened-to-state-school-cricket", "north"],
                   ["sport/ng-interactive/2018/jul/23/inner-city-cricket-no-space-left-to-play", "south"],
                   ["sport/ng-interactive/2018/jul/23/inner-city-cricket-is-ethnic-minority-talent-being-missed", "midlands"]

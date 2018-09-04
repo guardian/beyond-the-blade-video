@@ -1,7 +1,8 @@
 #intro-expand-btn,
 #more-documentaries,
-.coming-soon {
-    // display: none;
+
+.new-header .inline-the-guardian-roundel {
+    // background-image: none;
 }
 
 .meta__supporter:not(.natwest) {
@@ -26,14 +27,13 @@
 
 .docs__poster {
     &--series-title {
-        display: inline-block;
+        display: block;
         color: #fff;
         transform: translateX(-2px);
         font-size: 18px;
         font-weight: 900;
         line-height: 22px;
         @include mq(phablet) {
-            display: block;
             margin-top: 12px;
             transform: translateX(1px);
             margin-bottom: 3px;
@@ -45,24 +45,6 @@
             .cancelled-autoplay &,
             .will-autoplay & {
                 margin-bottom: -9px;
-            }
-        }
-
-        &:after {
-            body[data-this-film='north'] & {
-                content: ': The North';
-            }
-
-            body[data-this-film='south'] & {
-                content: ': The South';
-            }
-
-            body[data-this-film='west'] & {
-                content: ': The West';
-            }
-
-            body[data-this-film='midlands'] & {
-                content: ': The Midlands';
             }
         }
     }
@@ -130,7 +112,22 @@
     }
 
     .fc-slice__item+.fc-slice__item:before {
-        border-left: 0.0625rem solid transparent;
+        border-left: none;
+    }
+
+    .fc-slice-wrapper {
+        margin: 0;
+    }
+
+    .fc-slice__item {
+        // display: flex;
+        // width: 50%;
+        // float: left;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 0;
+        margin-bottom: 20px;
+        width: 50%;
     }
 
     .spacer {
@@ -189,11 +186,16 @@
 }
 
 .doc-card__description {
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
     padding-bottom: 6px;
     margin: 0;
+
+    @include mq(desktop) {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .doc-card .doc-card__link {
