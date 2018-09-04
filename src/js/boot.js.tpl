@@ -18,7 +18,7 @@ define([], function() {
             var interactiveConfig = {
                 'assetPath': '<%= assetPath %>',
                 'comingSoonSheetName': 'coming-soon',
-                'sheetId': '1lITVqZ6n0Yo07_ETbsitk2VHEAC4Ksg9Cj4zsZXEWi0',
+                'sheetId': '1u5SVvMDpouEbMDhIbwFrxEbEtoBCd16yCbklWQANCbQ',
                 'docsArray':
                 [
                   ["sport/ng-interactive/2018/jul/23/inner-city-cricket-fighting-for-new-blood", "west"],

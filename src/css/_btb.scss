@@ -1,21 +1,27 @@
-#more-documentaries,
 #intro-expand-btn,
+#more-documentaries,
 .coming-soon {
-    display: none;
+    // display: none;
 }
 
 .meta__supporter:not(.natwest) {
     display: none;
 }
+
 .meta__supporter.natwest {
     .supporter-logo img {
         width: 58px;
         height: 64px;
         margin-top: 6px;
     }
+
     .supporter-info:after {
-        display: none;
+        // display: none;
     }
+}
+
+.fc-container__inner {
+    border-color: #646464!important;
 }
 
 .docs__poster {
@@ -36,21 +42,25 @@
             transform: translateX(12px);
         }
         @include mq($from:tablet, $until:desktop) {
-            .will-autoplay &,
-            .cancelled-autoplay & {
+            .cancelled-autoplay &,
+            .will-autoplay & {
                 margin-bottom: -9px;
             }
         }
+
         &:after {
             body[data-this-film='north'] & {
                 content: ': The North';
             }
+
             body[data-this-film='south'] & {
                 content: ': The South';
             }
+
             body[data-this-film='west'] & {
                 content: ': The West';
             }
+
             body[data-this-film='midlands'] & {
                 content: ': The Midlands';
             }
@@ -64,6 +74,7 @@
             left: auto;
         }
     }
+
     &--headline {
         @include mq(phablet) {
             margin-top: 0;
@@ -72,15 +83,18 @@
             max-width: 620px;
         }
     }
+
     &--title.cancelled-autoplay,
     &--title.will-autoplay {
         @include mq(desktop) {
             padding-bottom: 0;
         }
     }
+
     &--title.cancelled-autoplay {
         @include mq(desktop) {
             padding-bottom: 0;
+
             .docs__poster--autoplay-stop-button {
                 display: inline-block;
                 transform: scale(0.9) translate(6px, 58px);
@@ -89,86 +103,105 @@
     }
 }
 
-
 .docs__poster--wrapper--playing + .docs--chapters-wrapper {
     display: none;
 }
 
 #inner-city-cricket {
     margin-top: 18px;
-    .fc-container__header__title,
-    .doc-card__description {
+
+    .fc-container__header__title:after {
+        background-color: #646464!important;
+    }
+
+    .doc-card__description,
+    .fc-container__header__title {
         color: #dcdcdc;
     }
+
     .doc-card__description {
         font-weight: 400;
+
         em {
             font-style: normal;
             font-weight: 700;
             color: #dcdcdc;
         }
     }
+
     .fc-slice__item+.fc-slice__item:before {
         border-left: 0.0625rem solid transparent;
     }
+
     .spacer {
         visibility: hidden;
     }
+
     .fc-slice__item:hover img {
         opacity: 0.8;
     }
 }
-
-
-body[data-this-film='north'] [data-this-card='north'] {
-    display: none !important;
-}
-body[data-this-film='south'] [data-this-card='south'] {
-    display: none !important;
-}
-body[data-this-film='west'] [data-this-card='west'] {
-    display: none !important;
-}
-body[data-this-film='midlands'] [data-this-card='midlands'] {
-    display: none !important;
-}
-
+// body[data-this-film='north'] [data-this-card='north'] {
+//     display: none !important;
+// }
+// body[data-this-film='south'] [data-this-card='south'] {
+//     display: none !important;
+// }
+// body[data-this-film='west'] [data-this-card='west'] {
+//     display: none !important;
+// }
+// body[data-this-film='midlands'] [data-this-card='midlands'] {
+//     display: none !important;
+// }
 
 .doc-card {
-  position: relative;
-  background-color: #161616;
-  color: #F6F6F6;
-  font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
-  width: 100%;
-  font-size: 16px;
-  line-height: 18px; }
-  @media (min-width: 30em) {
+    position: relative;
+    background-color: #161616;
+    color: #F6F6F6;
+    font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+}
+@media (min-width: 30em) {
     .doc-card {
-      font-size: 18px;
-      line-height: 20px; } }
-  @media (min-width: 41.25em) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+@media (min-width: 41.25em) {
     .doc-card {
-      font-size: 16px;
-      line-height: 18px; } }
-  @media (min-width: 46.25em) {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+@media (min-width: 46.25em) {
     .doc-card {
-      font-size: 18px;
-      line-height: 20px; } }
-  .doc-card__poster {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+.doc-card__poster {
     max-width: 100%;
     display: block;
-    margin-bottom: 6px; }
-  .doc-card__description {
+    margin-bottom: 6px;
+}
+
+.doc-card__description {
     font-size: inherit;
     line-height: inherit;
     font-weight: 500;
     padding-bottom: 6px;
-    margin: 0; }
-  .doc-card .doc-card__link {
+    margin: 0;
+}
+
+.doc-card .doc-card__link {
     text-indent: -9em;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+}
