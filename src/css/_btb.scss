@@ -1,12 +1,25 @@
 #intro-expand-btn,
 #more-documentaries,
-
 .new-header .inline-the-guardian-roundel {
     // background-image: none;
 }
 
+.coming-soon {
+    display: none;
+}
+
 .meta__supporter:not(.natwest) {
     display: none;
+}
+
+.meta__social {
+    border-top: solid 1px #646464!important;
+}
+
+.meta__date {
+    @include mq($until:600px) {
+    border-top: solid 1px #646464!important;
+}
 }
 
 .meta__supporter.natwest {
@@ -151,6 +164,11 @@
 //     display: none !important;
 // }
 
+.fc-container__header__title {
+    display: block!important;
+    float: none!important;
+}
+
 .doc-card {
     position: relative;
     background-color: #161616;
@@ -159,6 +177,42 @@
     width: 100%;
     font-size: 16px;
     line-height: 18px;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #646464;
+        right: -10px;
+        top: 0;
+        @include mq(tablet) {
+            height: 213.438px;
+        }
+        @include mq(desktop) {
+            height: 293.469px;
+        }
+    }
+}
+
+.pod-card {
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #646464;
+        right: -10px;
+        top: 0;
+        @include mq(tablet) {
+            height: 160px;
+        }
+        @include mq(desktop) {
+            height: 220px;
+        }
+    }
 }
 @media (min-width: 30em) {
     .doc-card {
@@ -183,15 +237,22 @@
     max-width: 100%;
     display: block;
     margin-bottom: 6px;
+    position: relative;
 }
 
-.doc-card__description {
+.fc-container__header__standfirst {
+    font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+}
+
+.doc-card__description,
+.fc-container__header__standfirst {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     padding-bottom: 6px;
     margin: 0;
-
+    color: #adadad;
+    // font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     @include mq(desktop) {
         font-size: 16px;
         line-height: 20px;
@@ -207,3 +268,110 @@
     right: 0;
     bottom: 0;
 }
+
+.more__info--copy,
+.more__info--header {
+    font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+    padding: 0 10px;
+}
+
+.more__info--copy {
+    color: #adadad;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: -3px;
+    @include mq(desktop) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.more__info--header {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: -3px;
+    margin-bottom: 6px;
+    @include mq(desktop) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.more__info--cta {
+    color: #dcdcdc;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background: #545454;
+    border-radius: 100px;
+    padding: 7px 30px 7px 15px;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 12px;
+    position: relative;
+
+    &:hover {
+        background: #444;
+    }
+
+    &:after {
+        content: '';
+        background-image: url('https://uploads.guim.co.uk/2018/09/05/btb-right2.svg');
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 18px;
+        position: absolute;
+        right: 5px;
+        top:6.5px;
+    }
+}
+
+.half-width {
+    width: 100%!important;
+    @include mq(tablet) {
+        width: 50%!important;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #646464;
+        right: 0;
+        top: 0;
+    }
+}
+
+.top-border {
+    @include mq($until:tablet) {
+        border-top: solid 1px #646464;
+        padding-top: 12px!important;
+    }
+}
+
+.no-border {
+    &:after,
+    &:before {
+        display: none;
+    }
+}
+// .border::after{
+//     content: '';
+//     display: none;
+//     position: absolute;
+//     height: 1.875rem;
+//     width: 0.0625rem;
+//     background-color: #dcdcdc;
+//     right: -0.6875rem;
+//     top: -0.375rem;
+//
+// }
+// .fc-item {
+//     margin-right: 0;
+// }
