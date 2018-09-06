@@ -107,9 +107,9 @@ class DocumentaryMetadata {
         return this.getField('showSupported') !== 'FALSE';
     }
 
-    get supportedBadgeUrl () {
-        return this.getField('supportedBadgeUrl');
-    }
+    // get supportedBadgeUrl () {
+    //     return this.getField('supportedBadgeUrl');
+    // }
 
     get supportedSiteUrl () {
         return this.getField('supportedSiteUrl');

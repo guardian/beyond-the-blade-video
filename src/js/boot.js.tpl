@@ -21,10 +21,10 @@ define([], function() {
                 'sheetId': '1u5SVvMDpouEbMDhIbwFrxEbEtoBCd16yCbklWQANCbQ',
                 'docsArray':
                 [
-                  ["sport/ng-interactive/2018/jul/23/inner-city-cricket-fighting-for-new-blood", "father"],
-                  ["sport/ng-interactive/2018/jul/23/inner-city-cricket-what-happened-to-state-school-cricket", "mother"],
-                  ["sport/ng-interactive/2018/jul/23/inner-city-cricket-no-space-left-to-play", "boy"],
-                  ["sport/ng-interactive/2018/jul/23/inner-city-cricket-is-ethnic-minority-talent-being-missed", "doctor"]
+                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-father", "father"],
+                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-mother", "mother"],
+                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-boy", "boy"],
+                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-doctor", "doctor"]
                 ],
                 'emailListId': 3745
             };
