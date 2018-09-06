@@ -361,17 +361,7 @@
         display: none;
     }
 }
-// .border::after{
-//     content: '';
-//     display: none;
-//     position: absolute;
-//     height: 1.875rem;
-//     width: 0.0625rem;
-//     background-color: #dcdcdc;
-//     right: -0.6875rem;
-//     top: -0.375rem;
-//
-// }
-// .fc-item {
-//     margin-right: 0;
-// }
+
+.should-hide {
+    display: none;
+}
