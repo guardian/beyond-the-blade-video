@@ -21,10 +21,10 @@ define([], function() {
                 'sheetId': '1u5SVvMDpouEbMDhIbwFrxEbEtoBCd16yCbklWQANCbQ',
                 'docsArray':
                 [
-                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-father", "father"],
-                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-mother", "mother"],
-                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-boy", "boy"],
-                  ["global/ng-interactive/2018/sep/06/beyond-the-blade-the-doctor", "doctor"]
+                  ["membership/ng-interactive/2018/sep/10/beyond-the-blade-the-father", "father"],
+                  ["membership/ng-interactive/2018/sep/10/beyond-the-blade-the-mother", "mother"],
+                  ["membership/ng-interactive/2018/sep/10/beyond-the-blade-the-boy", "boy"],
+                  ["membership/ng-interactive/2018/sep/10/beyond-the-blade-the-doctor", "doctor"]
                 ],
                 'emailListId': 3745
             };
