@@ -8,7 +8,7 @@ export default function share(title, shareURL) {
         var shareWindow;
 
         if (network === 'twitter') {
-            shareWindow = twitterBaseUrl + encodeURIComponent(twitterMessage + ' ') + shareURL;
+            shareWindow = twitterBaseUrl + encodeURIComponent(twitterMessage + ' #BeyondtheBlade ') + shareURL;
         } else if (network === 'facebook') {
             shareWindow = facebookBaseUrl + shareURL;
         } else if (network === 'email') {
