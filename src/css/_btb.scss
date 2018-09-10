@@ -18,8 +18,8 @@
 
 .meta__date {
     @include mq($until:600px) {
-    border-top: solid 1px #646464!important;
-}
+        border-top: solid 1px #646464!important;
+    }
 }
 
 .meta__supporter.natwest {
@@ -320,13 +320,13 @@
 
     &:after {
         content: '';
-        background-image: url('https://uploads.guim.co.uk/2018/09/05/btb-right2.svg');
+        background-image: url("https://uploads.guim.co.uk/2018/09/05/btb-right2.svg");
         background-repeat: no-repeat;
         width: 19px;
         height: 18px;
         position: absolute;
         right: 5px;
-        top:6.5px;
+        top: 6.5px;
     }
 }
 
@@ -364,4 +364,11 @@
 
 .should-hide {
     display: none;
+}
+
+.fc-item {
+    @include mq($until:tablet) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
