@@ -16,7 +16,7 @@ export default function share(title, shareURL) {
                 shareWindow = twitterBaseUrl + encodeURIComponent(twitterMessage + " #BeyondtheBlade 'Wrong place, wrong time – that's it' gu.com/blade-father ");
             }
             if (film === 'mother') {
-                shareWindow = twitterBaseUrl + encodeURIComponent(twitterMessage + " #BeyondtheBlade 'When they found him guilty, the found me guilty too' gu.com/blade-mother ");
+                shareWindow = twitterBaseUrl + encodeURIComponent(twitterMessage + " #BeyondtheBlade 'When they found him guilty, they found me guilty too' gu.com/blade-mother ");
             }
             if (film === 'boy') {
                 shareWindow = twitterBaseUrl + encodeURIComponent(twitterMessage + " #BeyondtheBlade 'I didn’t mean for him to die' gu.com/blade-boy ");
